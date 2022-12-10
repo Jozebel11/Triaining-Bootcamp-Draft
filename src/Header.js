@@ -7,6 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Accordion from 'react-bootstrap/Accordion';
+import Logo from './logo.JPG'
 
 
 
@@ -18,13 +19,12 @@ const Header = () => {
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container className='header-container' fluid>
-            <div></div>
+            <Navbar.Brand className='header-brand' href="/"><img className='header-logo' alt='logo' src={Logo}/></Navbar.Brand>
             <Navbar.Toggle className='header-toggle' aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            {/*<Navbar.Brand className='header-brand' href="/">Strong Brew Social</Navbar.Brand>*/}
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
+              placement="end"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
