@@ -1,0 +1,10 @@
+.home-container{
+    background-image: url('619BF06A-5CD7-41ED-99EF-38D81EA70D4F.png');
+    height: 100%;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 3000px;
+  background-size: 800px 3000px;
+}
