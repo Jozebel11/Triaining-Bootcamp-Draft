@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Accordion from 'react-bootstrap/Accordion';
 import Logo from './logo.JPG'
+import Brand from './brand-logo.png'
 
 
 
@@ -19,7 +20,10 @@ const Header = () => {
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container className='header-container' fluid>
-            <Navbar.Brand className='header-brand' href="/"><img className='header-logo' alt='logo' src={Logo}/></Navbar.Brand>
+            <div></div>
+            <Navbar.Brand className='header-brand' href="/">
+            <img className='brand-logo' alt='brand' src={Brand}/>
+            </Navbar.Brand>
             <Navbar.Toggle className='header-toggle' aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,7 +32,7 @@ const Header = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Strong Brew Social
+                    <img className='header-logo' alt='logo' src={Logo}/>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

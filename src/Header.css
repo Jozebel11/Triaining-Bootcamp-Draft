@@ -8,7 +8,7 @@
 .navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
-    --bs-navbar-color: transparent!important;
+    --bs-navbar-color: white!important;
     --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
     --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
     --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
@@ -34,12 +34,13 @@
 }
 
 .bg-light {
-    --bs-bg-opacity: 0 !important;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    --bs-bg-opacity: 1 !important;
+    background-color: white !important;
+    border-bottom: solid 2px #edede9 !important;
 }
 
 .navbar-toggler {
-    border: none !important;
+    border:#edede9!important;
     border-radius: var(--bs-navbar-toggler-border-radius);
     
 }
@@ -57,10 +58,16 @@
     color: #d6ccc2 !important;
 }
 .header-logo{
-    width: 120px;
+    width: 80px;
     object-fit: contain;
     margin: 0 20px;
     margin-top: 10px;
+
+}
+
+.brand-logo{
+    width: 250px;
+    object-fit: contain;
 
 }
 
