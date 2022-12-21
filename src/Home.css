@@ -1,9 +1,4 @@
-.home-container{
-    height: 100%;
-
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 3000px;
-  background-size: 900px 3000px;
+canvas {
+    aspect-ratio: 1920/1080!important;
+    min-height: fit-content !important;
 }

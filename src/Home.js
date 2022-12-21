@@ -1,15 +1,11 @@
 import React from 'react'
 import './Home.css'
+import Spline from '@splinetool/react-spline';
 
 const Home = () => {
   return (
     <div className='home'>
-        <div className='home-container'>
-            <div className='introduction'>
-
-            </div>
-            
-        </div>
+        <Spline scene="https://prod.spline.design/btythcQCBjRPErpC/scene.splinecode" />
     </div>
   )
 }
