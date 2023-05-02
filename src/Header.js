@@ -18,13 +18,13 @@ const Header = () => {
     <div className='header'>
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3" id='nav-3'>
           <Container className='header-container' fluid>
             <div></div>
             <Navbar.Brand className='header-brand' href="/">
             <img className='brand-logo' alt='brand' src={Brand}/>
             </Navbar.Brand>
-            <Navbar.Toggle className='header-toggle' aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle className='header-toggle' aria-controls={`offcanvasNavbar-expand-${expand}`} style={{color:'white'}}/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

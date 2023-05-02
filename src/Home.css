@@ -1,4 +1,40 @@
-canvas {
-    aspect-ratio: 1920/1080!important;
-    min-height: fit-content !important;
+.home {
+  display: flex;
+  justify-content: center;
+  contain: content;
+  max-width:fit-content;
+  margin: 0 !important;
+  height: max-content;
+
+
 }
+.spline {
+   
+    
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1760px) {
+    
+    .spline {
+        margin-left: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 1700px) {
+    .home{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .spline {
+        margin-left: 0;
+    }
+
+    
+}
+
+
